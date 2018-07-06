@@ -1,0 +1,43 @@
+.btn{
+	&,
+	&:link,
+	&:visited{
+		display: inline-block;
+		padding: 1rem 3rem;
+		text-decoration: none;
+		border-radius: 20rem;
+		font-weight: 300;
+
+		transition: all .2s;
+	}
+
+	&:hover,
+	&:active{
+		background-color: #cf6d17;
+	}
+
+
+	&--header-orange{
+		background-color: #e67e22;
+		border: 1px solid #e67e22;
+		color: #fff;
+		margin-right: 1.5rem;
+
+		&:hover,
+		&:active{
+			border-color: #cf6d17;
+		}
+	}
+
+	&--header-transparent{
+		border: 1px solid #e67e22;
+		color: #e67e22;
+
+		&:hover,
+		&:active{
+			border-color: #cf6d17;
+			color: #FFF;
+		}
+	}
+
+}
