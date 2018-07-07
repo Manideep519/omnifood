@@ -15,4 +15,5 @@ html{
 	font-family: 'Lato', 'Arial', sans-serif;
 	font-size: 62.5%;
 	text-rendering: optimizeLegibility;
+	color: $dark-grey;
 }

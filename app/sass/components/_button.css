@@ -13,29 +13,29 @@
 
 	&:hover,
 	&:active{
-		background-color: #cf6d17;
+		background-color: $orange-dark;
 	}
 
 
 	&--header-orange{
-		background-color: #e67e22;
-		border: 1px solid #e67e22;
+		background-color: $orange;
+		border: 1px solid $orange;
 		color: #fff;
 		margin-right: 1.5rem;
 
 		&:hover,
 		&:active{
-			border-color: #cf6d17;
+			border-color: $orange-dark;
 		}
 	}
 
 	&--header-transparent{
-		border: 1px solid #e67e22;
-		color: #e67e22;
+		border: 1px solid $orange;
+		color: $orange;
 
 		&:hover,
 		&:active{
-			border-color: #cf6d17;
+			border-color: $orange-dark;
 			color: #FFF;
 		}
 	}

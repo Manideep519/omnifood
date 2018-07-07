@@ -1,0 +1,43 @@
+.nav-bar{
+	margin-top: 2rem;
+	display: flex;
+	align-items: center;
+
+	&__logo-white{
+		display: block;
+		height: 10rem;
+	}
+
+	&__nav{
+		float: right;
+
+		ul{
+			list-style-type: none;
+
+			li{
+				display: inline-block;
+				&:not(:last-child){
+					margin-right: 4rem;
+				}
+
+				a:link,
+				a:visited{
+					display: inline-block;
+					text-decoration: none;
+					font-size: 1.8rem;
+					font-weight: 300;
+					color: #FFF;
+					padding: .8rem 0;
+					border-bottom: 2px solid transparent;
+					transition: all .2s;
+				}
+
+				a:hover,
+				a:visited{
+					border-bottom: 2px solid #e67e22;
+				}
+			}
+		}
+	}
+
+}

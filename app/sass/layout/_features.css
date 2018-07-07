@@ -1,0 +1,35 @@
+.features{
+	padding:8rem 0 9rem 0;
+	font-weight: 300;
+
+	&__text{
+		line-height: 3rem;
+		width: 70%;
+		margin:0 auto;
+		text-align: center;
+	}
+
+	&__box{
+		padding: 1rem;
+		&:not(:last-child){
+			margin-right: 2rem;
+		}
+
+		&-icon{
+			display: block;
+			font-size: 7rem;
+			color: $orange;
+			margin-bottom: 1.5rem;
+		}
+
+		&-heading{
+			font-weight: 300;
+			margin-bottom: 1.5rem;
+		}
+
+		&-text{
+			line-height: 2.8rem;
+			font-size: 1.8rem;
+		}
+	}
+}

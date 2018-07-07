@@ -1,0 +1,14 @@
+.heading-1{
+	font-weight: 300;
+	text-align: center;
+
+	&::after{
+		content: '';
+		display: block;
+		width: 10rem;
+		height: 2px;
+		margin: 0 auto;
+		background-color: $orange;
+		margin-top: 3rem; 
+	}
+}
