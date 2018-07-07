@@ -28,11 +28,11 @@ gulp.task('imageMin', function(){
 });
 
 
-// gulp.task('fonts', function(){
-// 	console.log("Moving fonts");
-// 	return gulp.src('app/fonts/**/*')
-// 	.pipe(gulp.dest('docs/fonts'))
-// });
+gulp.task('fonts', function(){
+	console.log("Moving fonts");
+	return gulp.src('app/fonts/**/*')
+	.pipe(gulp.dest('docs/fonts'))
+});
 
 
 gulp.task('clean:docs', function(){
@@ -44,6 +44,6 @@ gulp.task('clean:docs', function(){
 gulp.task('build', function(callback){
 	console.log("Building assets");
 	runSequence('clean:docs',
-		['useref', 'imageMin'],
+		['useref', 'fonts', 'imageMin'],
 		callback);
 });
