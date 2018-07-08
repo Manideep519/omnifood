@@ -1,6 +1,10 @@
 .heading-1{
+	font-size: 3.6rem;
 	font-weight: 300;
+	text-transform: uppercase;
 	text-align: center;
+	letter-spacing: 1px;
+	word-spacing: 2px;
 
 	&::after{
 		content: '';
@@ -10,5 +14,9 @@
 		margin: 0 auto;
 		background-color: $orange;
 		margin-top: 3rem; 
+	}
+
+	&--white{
+		color: #FFF;
 	}
 }

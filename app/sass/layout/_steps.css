@@ -1,0 +1,55 @@
+.steps{
+	padding: 8rem 0;
+	background-color: #f4f4f4;
+
+	&__app-img{
+		width: 30%;
+		float: right;
+		margin-right: 5rem;
+	}
+
+	&__wrapper{
+		padding: 4rem 2rem;
+	}
+
+	&__box{
+		margin-bottom: 5rem;
+		display: flex;
+		align-items: center;
+
+		&-number{
+			display: block;
+			height: 5.5rem;
+			width: 5.5rem;
+			margin-right: 2rem;
+			font-size: 3rem;
+			font-weight: 300;
+			color: $orange;
+			border-radius: 50%;
+			border: 2px solid currentcolor;
+
+			position: relative;
+
+			& span{
+				position: absolute;
+				@mixin center;
+			}
+		}
+
+		&-text{
+			font-weight: 300;
+			width: 70%;
+		}
+
+		&-links{ text-decoration: none; }
+
+		&-link-img{
+			height: 4.9rem;
+			width: auto;
+
+			&:not(:last-child){
+				margin-right: 1rem;
+			}
+		}
+	}
+}

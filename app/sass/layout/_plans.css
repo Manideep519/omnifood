@@ -1,0 +1,81 @@
+.plans{
+	padding: 8rem 0;
+	background-color: #f4f4f4;
+
+	&__plan-card{
+		background-color: #fff;
+		box-shadow: 0 2px 2px #efefef;
+		margin: 0 auto;
+		width: 85%;
+
+		&-price{
+			background-color: #fcfcfc;
+			border-bottom: 	1px solid #e8e8e8;
+			border-radius: .5rem;
+			padding: 1.5rem;
+			&-type{
+				font-size: 2.2rem;
+				text-transform: uppercase;
+				margin-bottom: 2rem;
+			}
+			&-plan{
+				color: $orange;
+				margin-bottom: 1rem;
+				span{
+					font-size: 6rem;
+					font-weight: 100;
+				}
+			}
+			&-info{
+				font-size: 1.6rem;
+			}
+		}
+
+		&-features{
+			font-size: 2rem;
+			padding: 2rem;
+			border-bottom: 1px solid #e8e8e8;
+
+			ul{ list-style-type: none; }
+
+			li::before{
+				content: '\2714';
+				font-size: 1.4rem;
+				margin-right: 2rem;
+				color: $orange;
+			}
+
+			li{
+				&:not(:last-child){
+					margin-bottom: 1.5rem;
+				}
+			}
+		}
+
+		&-btn{
+			padding: 1.5rem;
+			text-align: center;
+
+			&-link{
+				display: inline-block;
+				text-decoration: none;
+				padding: 1rem 3rem;
+				color: $orange;
+				border: 1px solid $orange;
+				border-radius: 200px;
+				transition: all .2s;
+
+				&--orange{
+					background-color: $orange;
+					color: #fff;
+				}
+			}
+
+			&-link:hover,
+			&-link:active{
+				background-color: $orange-dark;
+				color: #FFF;
+			}	
+		}
+	}
+}

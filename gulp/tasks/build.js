@@ -14,7 +14,7 @@ gulp.task('useref', function(){
 	return gulp.src('app/*.html')
 	.pipe(useref())
 	.pipe(gulpIf('*.css', cssNano()))
-	.pipe(gulp.dest('docs'))
+	.pipe(gulp.dest('docs'));
 });
 
 
@@ -24,14 +24,14 @@ gulp.task('imageMin', function(){
 	.pipe(cache(imageMin({
 		interlaced:true
 	})))
-	.pipe(gulp.dest('docs/img'))
+	.pipe(gulp.dest('docs/img'));
 });
 
 
 gulp.task('fonts', function(){
 	console.log("Moving fonts");
 	return gulp.src('app/fonts/**/*')
-	.pipe(gulp.dest('docs/fonts'))
+	.pipe(gulp.dest('docs/fonts'));
 });
 
 
