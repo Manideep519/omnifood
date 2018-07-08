@@ -35,7 +35,7 @@
 			font-size: 2rem;
 			padding: 2rem;
 			border-bottom: 1px solid #e8e8e8;
-
+	
 			ul{ list-style-type: none; }
 
 			li::before{
@@ -48,6 +48,12 @@
 			li{
 				&:not(:last-child){
 					margin-bottom: 1.5rem;
+				}
+			}
+
+			&-normal{
+				ul li:nth-child(3)::before{
+					content: '\2716';
 				}
 			}
 		}
@@ -75,7 +81,7 @@
 			&-link:active{
 				background-color: $orange-dark;
 				color: #FFF;
-			}	
+			}
 		}
 	}
 }

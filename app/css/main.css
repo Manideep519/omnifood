@@ -534,6 +534,101 @@ html{
 			font-size: 1.8rem;
 		}
 
+.footer{
+	padding: 6rem 0;
+	background-color: #333;
+	color: #888;
+	font-size: 1.6rem;
+}
+
+.footer__links ul{ list-style-type: none; }
+
+.footer__links li{
+			display: inline-block;
+			margin-right: 2rem;
+		}
+
+.footer__links a:link,
+		.footer__links a:visited{
+			text-decoration: none;
+			color: currentColor;
+		}
+
+.footer__links a:hover,
+		.footer__links a:active{
+			color: #ddd;
+		}
+
+.footer__social-media{
+		float: right;
+	}
+
+.footer__social-media-icon{
+			cursor: pointer;
+			display: inline-block;
+			width: 2rem;
+			height: 2rem;
+			margin-right: 2rem;
+			stroke-width: 0;
+			stroke: currentColor;
+			fill: currentColor;
+		}
+
+.footer__social-media-icon:hover{
+				stroke: #ddd;
+				fill: #ddd;
+			}
+
+.footer__legal-text{
+		text-align: center;
+	}
+
+.form{
+	padding: 8rem 0;
+}
+
+.form__contact{
+		width: 60%;
+		margin: 0 auto;
+	}
+
+.form__contact input[type=text], .form__contact input[type=email], .form__contact select, .form__contact textarea{
+			width: 100%;
+			font-weight: 300;
+			padding: 1rem;
+			border-radius: .4rem;
+			border: 1px solid #ccc;
+			outline: none;
+		}
+
+.form__contact input[type=text]:focus, .form__contact input[type=email]:focus, .form__contact select:focus, .form__contact textarea:focus {
+			box-shadow: 0 0 5px rgba(230,126,34, .5);
+		}
+
+.form__contact-line{
+			margin: 2rem;
+		}
+
+.form__contact input[type="submit"]{
+			font-weight: 300;
+			padding: 1rem 3rem;
+			margin-top: 1rem;
+			border: none;
+			box-shadow: none;
+			border-radius: 20rem;
+			color: #fff;
+			background-color: #e67e22;
+		}
+
+.form__contact input[type="submit"]:hover,
+			.form__contact input[type="submit"]:active{
+				background-color: #cf6d17;
+			}
+
+.form__contact input[type="submit"]:focus{
+			outline: none;
+		}
+
 .header{
 	background-image: linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../img/hero.jpg);
 	background-size: cover;
@@ -811,9 +906,13 @@ Grid Layout 12Col Starts!!!
 					margin-bottom: 1.5rem;
 				}
 
+.plans__plan-card-features-normal ul li:nth-child(3)::before{
+					content: '\2716';
+				}
+
 .plans__plan-card-btn{
 			padding: 1.5rem;
-			text-align: center;	
+			text-align: center;
 		}
 
 .plans__plan-card-btn-link{
