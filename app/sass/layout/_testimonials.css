@@ -1,5 +1,5 @@
 .testimonials{
-	padding: 8rem 0;
+	padding: 8rem 2rem;
 	background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../img/back-customers.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -7,10 +7,16 @@
 
 	&__box{
 		display: flex;
+		align-items: stretch;
 		flex-direction: column;
 		font-style: italic;
 		color: #fff;
 		padding: 2rem;
+		padding-bottom: 4rem;
+
+		@mixin atSmall{
+			padding-bottom: 2rem;
+		}
 
 		&-text::before{
 			content: "\201C";
@@ -30,6 +36,7 @@
 			display: flex;
 			align-items: center;
 			margin-top: 3rem;
+
 
 			&-img{
 				display: block;

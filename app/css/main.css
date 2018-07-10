@@ -383,19 +383,33 @@ body{
 
 html{
 	font-family: 'Lato', 'Arial', sans-serif;
-	font-size: 62.5%;
+	font-size: 50%; /*1rem = 8px, 8px/16px = 50%;*/
 	text-rendering: optimizeLegibility;
 	color: #555;
 }
 
+@media (min-width: 900px){
+
+html{
+		font-size: 62.5%  /*1rem = 10px, 10px/16px = 62.5%;*/
+}
+	}
+
 .heading-1{
-	font-size: 3.6rem;
+	font-size: 3rem;
 	font-weight: 300;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 1px;
 	word-spacing: 2px;
 }
+
+@media (min-width: 640px){
+
+.heading-1{
+		font-size: 3.6rem
+}
+	}
 
 .heading-1::after{
 		content: '';
@@ -452,7 +466,7 @@ html{
 		}
 
 .cities{
-	padding: 8rem 0;
+	padding: 8rem 2rem;
 
 }
 
@@ -497,15 +511,22 @@ html{
 		}
 
 .features{
-	padding:8rem 0 9rem 0;
+	padding:8rem 2rem 9rem 2rem;
 	font-weight: 300;
 }
 
 .features__text{
 		line-height: 3rem;
-		width: 70%;
+		width: 100%;
 		margin:0 auto;
 		text-align: center;
+	}
+
+@media (min-width: 640px){
+
+.features__text{
+			width: 70%
+	}
 	}
 
 .features__box{
@@ -535,16 +556,28 @@ html{
 		}
 
 .footer{
-	padding: 6rem 0;
+	padding: 6rem 2rem;
 	background-color: #333;
 	color: #888;
 	font-size: 1.6rem;
 }
 
+.footer__links{
+		text-align: center;
+	}
+
+@media (min-width: 640px){
+
+.footer__links{
+			text-align: left
+	}
+	}
+
 .footer__links ul{ list-style-type: none; }
 
 .footer__links li{
 			display: inline-block;
+			padding: 1rem 2rem;
 			margin-right: 2rem;
 		}
 
@@ -560,7 +593,17 @@ html{
 		}
 
 .footer__social-media{
-		float: right;
+		float: none;
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+@media (min-width: 640px){
+
+.footer__social-media{
+			float: right;
+			text-align: left
+	}
 	}
 
 .footer__social-media-icon{
@@ -584,13 +627,31 @@ html{
 	}
 
 .form{
-	padding: 8rem 0;
+	padding: 8rem 2rem;
 }
 
 .form__contact{
-		width: 60%;
+		width: 100%;
 		margin: 0 auto;
 	}
+
+@media (min-width: 640px){
+
+.form__contact{
+			width: 80%
+	}
+	}
+
+@media (min-width: 900px){
+
+.form__contact{
+			width: 60%
+	}
+	}
+
+.form__contact-line > div:first-of-type {
+			margin-bottom: 2rem;
+		}
 
 .form__contact input[type=text], .form__contact input[type=email], .form__contact select, .form__contact textarea{
 			width: 100%;
@@ -599,6 +660,10 @@ html{
 			border-radius: .4rem;
 			border: 1px solid #ccc;
 			outline: none;
+		}
+
+.form__contact select{
+			background-color: #FFF; /*for mobiles*/
 		}
 
 .form__contact input[type=text]:focus, .form__contact input[type=email]:focus, .form__contact select:focus, .form__contact textarea:focus {
@@ -635,21 +700,20 @@ html{
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 100vh;
+	padding: 0 2rem;
 	position: relative;
 }
 
 .header__text-box{
-	    width: 114rem;
-	    position: absolute;
-	    top: 50%;
-	    left: 50%;
-	    -webkit-transform: translate(-50%,-50%);
-	            transform: translate(-50%,-50%);
+		position: absolute;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		        transform: translateY(-50%);
 	}
 
 .header__heading{
 		margin: 0;
-		font-size: 4.8rem;
+		font-size: 4.2rem;
 		font-weight: 300;
 		color: #fff;
 		line-height: normal;
@@ -657,6 +721,10 @@ html{
 		letter-spacing: 1px;
 		word-spacing: .4rem;
 	}
+
+.header__heading mixin atSmall{
+			font-size: 4.8rem;
+		}
 
 /*============================================================================
 Grid Layout 12Col Starts!!!
@@ -744,7 +812,7 @@ Grid Layout 12Col Starts!!!
         .col-sm-12 {width: 100%;}
     }
 
-@media screen and (min-width:960px){
+@media screen and (min-width:900px){
         .col-md-1 {width: 8.33333%;}
         .col-md-2 {width: 16.66667%;}
         .col-md-3 {width: 25%;}
@@ -757,6 +825,21 @@ Grid Layout 12Col Starts!!!
         .col-md-10 {width: 83.33333%;}
         .col-md-11 {width: 91.66667%;}
         .col-md-12 {width: 100%;}
+    }
+
+@media screen and (min-width:1000px){
+        .col-xmd-1 {width: 8.33333%;}
+        .col-xmd-2 {width: 16.66667%;}
+        .col-xmd-3 {width: 25%;}
+        .col-xmd-4 {width: 33.33333%;}
+        .col-xmd-5 {width: 41.66667%;}
+        .col-xmd-6 {width: 50%;}
+        .col-xmd-7 {width: 58.33333%;}
+        .col-xmd-8 {width: 66.66667%;}
+        .col-xmd-9 {width: 75%;}
+        .col-xmd-10 {width: 83.33333%;}
+        .col-xmd-11 {width: 91.66667%;}
+        .col-xmd-12 {width: 100%;}
     }
 
 @media screen and (min-width:1200px){
@@ -858,6 +941,14 @@ Grid Layout 12Col Starts!!!
 		box-shadow: 0 2px 2px #efefef;
 		margin: 0 auto;
 		width: 85%;
+		margin-bottom: 2rem;
+	}
+
+@media (min-width: 900px){
+
+			.plans__plan-card:not(:last-child){
+				margin-bottom: 0;
+			}
 	}
 
 .plans__plan-card-price{
@@ -937,14 +1028,24 @@ Grid Layout 12Col Starts!!!
 			}
 
 .steps{
-	padding: 8rem 0;
+	padding: 8rem 2rem;
 	background-color: #f4f4f4;
+
 }
 
 .steps__app-img{
-		width: 30%;
-		float: right;
-		margin-right: 5rem;
+			float: none;
+			max-width: 20rem;
+			display: block;
+			margin: 0 auto;
+	}
+
+@media (min-width: 640px){
+
+.steps__app-img{
+			float: right;
+			margin-right: 5rem
+	}
 	}
 
 .steps__wrapper{
@@ -955,6 +1056,7 @@ Grid Layout 12Col Starts!!!
 		margin-bottom: 5rem;
 		display: flex;
 		align-items: center;
+
 	}
 
 .steps__box-number{
@@ -981,22 +1083,41 @@ Grid Layout 12Col Starts!!!
 
 .steps__box-text{
 			font-weight: 300;
-			width: 70%;
+			width: 90%;
 		}
 
-.steps__box-links{ text-decoration: none; }
+@media (min-width: 640px){
 
-.steps__box-link-img{
-			height: 4.9rem;
-			width: auto;
+.steps__box-text{
+				width: 70%
+		}
+	}
+
+.steps__box-download{
+			text-align: center;
 		}
 
-.steps__box-link-img:not(:last-child){
-				margin-right: 1rem;
+@media (min-width: 640px){
+
+.steps__box-download{
+				text-align: left
+		}
+	}
+
+.steps__box-download-links{ text-decoration: none; }
+
+.steps__box-download-links-img{
+				height: 4.9rem;
+				width: 15rem;
+				width: auto;
 			}
 
+.steps__box-download-links-img:not(:last-child){
+					margin-right: 1rem;
+				}
+
 .testimonials{
-	padding: 8rem 0;
+	padding: 8rem 2rem;
 	background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../img/back-customers.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1005,10 +1126,19 @@ Grid Layout 12Col Starts!!!
 
 .testimonials__box{
 		display: flex;
+		align-items: stretch;
 		flex-direction: column;
 		font-style: italic;
 		color: #fff;
 		padding: 2rem;
+		padding-bottom: 4rem;
+	}
+
+@media (min-width: 640px){
+
+.testimonials__box{
+			padding-bottom: 2rem
+	}
 	}
 
 .testimonials__box-text::before{

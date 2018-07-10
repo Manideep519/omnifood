@@ -1,11 +1,17 @@
 .steps{
-	padding: 8rem 0;
+	padding: 8rem 2rem;
 	background-color: #f4f4f4;
 
 	&__app-img{
-		width: 30%;
-		float: right;
-		margin-right: 5rem;
+			float: none;
+			max-width: 20rem;
+			display: block;
+			margin: 0 auto;
+		
+		@mixin atSmall{
+			float: right;
+			margin-right: 5rem;
+		}
 	}
 
 	&__wrapper{
@@ -38,18 +44,33 @@
 
 		&-text{
 			font-weight: 300;
-			width: 70%;
-		}
+			width: 90%;
 
-		&-links{ text-decoration: none; }
-
-		&-link-img{
-			height: 4.9rem;
-			width: auto;
-
-			&:not(:last-child){
-				margin-right: 1rem;
+			@mixin atSmall{
+				width: 70%;
 			}
 		}
+
+		&-download{
+			text-align: center;
+
+			@mixin atSmall{
+				text-align: left;
+			}
+
+			&-links{ text-decoration: none; }
+
+			&-links-img{
+				height: 4.9rem;
+				width: 15rem;
+				width: auto;
+
+				&:not(:last-child){
+					margin-right: 1rem;
+				}
+			}
+		}
+
 	}
+
 }

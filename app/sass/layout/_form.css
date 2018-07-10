@@ -1,9 +1,21 @@
 .form{
-	padding: 8rem 0;
+	padding: 8rem 2rem;
 
 	&__contact{
-		width: 60%;
+		width: 100%;
 		margin: 0 auto;
+
+		@mixin atSmall{
+			width: 80%;
+		}
+
+		@mixin atMedium{
+			width: 60%;
+		}
+
+		&-line > div:first-of-type {
+			margin-bottom: 2rem;
+		}
 
 		& input[type=text], input[type=email], select, textarea{
 			width: 100%;
@@ -12,6 +24,10 @@
 			border-radius: .4rem;
 			border: 1px solid #ccc;
 			outline: none;
+		}
+
+		& select{
+			background-color: #FFF; /*for mobiles*/
 		}
 
 		& input[type=text]:focus , input[type=email]:focus, select:focus , textarea:focus {

@@ -1,12 +1,16 @@
 .features{
-	padding:8rem 0 9rem 0;
+	padding:8rem 2rem 9rem 2rem;
 	font-weight: 300;
 
 	&__text{
 		line-height: 3rem;
-		width: 70%;
+		width: 100%;
 		margin:0 auto;
 		text-align: center;
+
+		@mixin atSmall{
+			width: 70%;
+		}
 	}
 
 	&__box{

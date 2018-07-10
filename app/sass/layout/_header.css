@@ -4,22 +4,27 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 100vh;
+	padding: 0 2rem;
 	position: relative;
 
 	&__text-box{
-	    width: 114rem;
-	    position: absolute;
-	    @mixin center;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 
 	&__heading{
 		margin: 0;
-		font-size: 4.8rem;
+		font-size: 4.2rem;
 		font-weight: 300;
 		color: #fff;
 		line-height: normal;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		word-spacing: .4rem;
+
+		mixin atSmall{
+			font-size: 4.8rem;
+		}
 	}
 }

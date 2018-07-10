@@ -69,7 +69,7 @@ Grid Layout 12Col Starts!!!
         .col-sm-11 {width: 91.66667%;}
         .col-sm-12 {width: 100%;}
     }
-    @media screen and (min-width:960px){
+    @media screen and (min-width:900px){
         .col-md-1 {width: 8.33333%;}
         .col-md-2 {width: 16.66667%;}
         .col-md-3 {width: 25%;}
@@ -83,6 +83,22 @@ Grid Layout 12Col Starts!!!
         .col-md-11 {width: 91.66667%;}
         .col-md-12 {width: 100%;}
     }
+
+    @media screen and (min-width:1000px){
+        .col-xmd-1 {width: 8.33333%;}
+        .col-xmd-2 {width: 16.66667%;}
+        .col-xmd-3 {width: 25%;}
+        .col-xmd-4 {width: 33.33333%;}
+        .col-xmd-5 {width: 41.66667%;}
+        .col-xmd-6 {width: 50%;}
+        .col-xmd-7 {width: 58.33333%;}
+        .col-xmd-8 {width: 66.66667%;}
+        .col-xmd-9 {width: 75%;}
+        .col-xmd-10 {width: 83.33333%;}
+        .col-xmd-11 {width: 91.66667%;}
+        .col-xmd-12 {width: 100%;}
+    }
+
 
     @media screen and (min-width:1200px){
         .col-wd-1 {width: 8.33333%;}
