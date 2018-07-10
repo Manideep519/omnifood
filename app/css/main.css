@@ -581,6 +581,13 @@ html{
 			margin-right: 2rem;
 		}
 
+@media (min-width: 640px){
+
+.footer__links li{
+				padding: 0
+		}
+	}
+
 .footer__links a:link,
 		.footer__links a:visited{
 			text-decoration: none;
