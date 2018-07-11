@@ -1,9 +1,21 @@
 .testimonials{
 	padding: 8rem 2rem;
-	background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../img/back-customers.jpg');
+	background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../img/small/back_customers-sm.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+
+	@mixin resp-css-medium{
+		background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../img/medium/back_customers-md.jpg');
+	}
+
+	@mixin resp-css-high{
+		background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../img/high/back_customers-hi.jpg');
+	}
+
+	@mixin resp-css-hd{
+		background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../img/hd/back-customers.jpg');
+	}
 
 	&__box{
 		display: flex;

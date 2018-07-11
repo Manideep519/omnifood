@@ -22,7 +22,41 @@
 	}
 }
 
+@define-mixin resp-css-hd{
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2) and ( min-width: 2000px),
+	only screen and (   min--moz-device-pixel-ratio: 2) and ( min-width: 2000px),
+	only screen and (     -o-min-device-pixel-ratio: 2/1) and ( min-width: 2000px),
+	only screen and (        min-device-pixel-ratio: 2) and ( min-width: 2000px),
+	only screen and (                min-resolution: 192dpi) and ( min-width: 2000px),
+	only screen and (                min-resolution: 2dppx) and ( min-width: 2000px) {
+		@mixin-content;
+	}
+}
 
+@define-mixin resp-css-high{
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2) and ( min-width: 1200px),
+	only screen and (   min--moz-device-pixel-ratio: 2) and ( min-width: 1200px),
+	only screen and (     -o-min-device-pixel-ratio: 2/1) and ( min-width: 1200px),
+	only screen and (        min-device-pixel-ratio: 2) and ( min-width: 1200px),
+	only screen and (                min-resolution: 192dpi) and ( min-width: 1200px),
+	only screen and (                min-resolution: 2dppx) and ( min-width: 1200px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin resp-css-medium{
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2) and ( min-width: 900px),
+	only screen and (   min--moz-device-pixel-ratio: 2) and ( min-width: 900px),
+	only screen and (     -o-min-device-pixel-ratio: 2/1) and ( min-width: 900px),
+	only screen and (        min-device-pixel-ratio: 2) and ( min-width: 900px),
+	only screen and (                min-resolution: 192dpi) and ( min-width: 900px),
+	only screen and (                min-resolution: 2dppx) and ( min-width: 900px) {
+		@mixin-content;
+	}
+}
 
 @define-mixin center{
 	top: 50%;

@@ -702,7 +702,7 @@ html{
 		}
 
 .header{
-	background-image: linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../img/hero.jpg);
+	background-image: linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../img/small/hero-sm.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -710,6 +710,45 @@ html{
 	padding: 0 2rem;
 	position: relative;
 }
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2) and ( min-width: 900px),
+	only screen and (   min--moz-device-pixel-ratio: 2) and ( min-width: 900px),
+	only screen and (        min-device-pixel-ratio: 2) and ( min-width: 900px),
+	only screen and (                -webkit-min-device-pixel-ratio: 2) and ( min-width: 900px),
+	only screen and (                min-resolution: 192dpi) and ( min-width: 900px),
+	only screen and (                min-resolution: 2dppx) and ( min-width: 900px) {
+
+.header{
+		background-image: linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../img/medium/hero-md.jpg)
+}
+	}
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2) and ( min-width: 1200px),
+	only screen and (   min--moz-device-pixel-ratio: 2) and ( min-width: 1200px),
+	only screen and (        min-device-pixel-ratio: 2) and ( min-width: 1200px),
+	only screen and (                -webkit-min-device-pixel-ratio: 2) and ( min-width: 1200px),
+	only screen and (                min-resolution: 192dpi) and ( min-width: 1200px),
+	only screen and (                min-resolution: 2dppx) and ( min-width: 1200px) {
+
+.header{
+		background-image: linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../img/high/hero-hi.jpg)
+}
+	}
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2) and ( min-width: 2000px),
+	only screen and (   min--moz-device-pixel-ratio: 2) and ( min-width: 2000px),
+	only screen and (        min-device-pixel-ratio: 2) and ( min-width: 2000px),
+	only screen and (                -webkit-min-device-pixel-ratio: 2) and ( min-width: 2000px),
+	only screen and (                min-resolution: 192dpi) and ( min-width: 2000px),
+	only screen and (                min-resolution: 2dppx) and ( min-width: 2000px) {
+
+.header{
+		background-image: linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../img/hd/hero.jpg)
+}
+	}
 
 .header__text-box{
 		position: absolute;
@@ -1125,11 +1164,50 @@ Grid Layout 12Col Starts!!!
 
 .testimonials{
 	padding: 8rem 2rem;
-	background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../img/back-customers.jpg');
+	background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../img/small/back_customers-sm.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 }
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2) and ( min-width: 900px),
+	only screen and (   min--moz-device-pixel-ratio: 2) and ( min-width: 900px),
+	only screen and (        min-device-pixel-ratio: 2) and ( min-width: 900px),
+	only screen and (                -webkit-min-device-pixel-ratio: 2) and ( min-width: 900px),
+	only screen and (                min-resolution: 192dpi) and ( min-width: 900px),
+	only screen and (                min-resolution: 2dppx) and ( min-width: 900px) {
+
+.testimonials{
+		background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../img/medium/back_customers-md.jpg')
+}
+	}
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2) and ( min-width: 1200px),
+	only screen and (   min--moz-device-pixel-ratio: 2) and ( min-width: 1200px),
+	only screen and (        min-device-pixel-ratio: 2) and ( min-width: 1200px),
+	only screen and (                -webkit-min-device-pixel-ratio: 2) and ( min-width: 1200px),
+	only screen and (                min-resolution: 192dpi) and ( min-width: 1200px),
+	only screen and (                min-resolution: 2dppx) and ( min-width: 1200px) {
+
+.testimonials{
+		background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../img/high/back_customers-hi.jpg')
+}
+	}
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2) and ( min-width: 2000px),
+	only screen and (   min--moz-device-pixel-ratio: 2) and ( min-width: 2000px),
+	only screen and (        min-device-pixel-ratio: 2) and ( min-width: 2000px),
+	only screen and (                -webkit-min-device-pixel-ratio: 2) and ( min-width: 2000px),
+	only screen and (                min-resolution: 192dpi) and ( min-width: 2000px),
+	only screen and (                min-resolution: 2dppx) and ( min-width: 2000px) {
+
+.testimonials{
+		background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url('../img/hd/back-customers.jpg')
+}
+	}
 
 .testimonials__box{
 		display: flex;

@@ -1,11 +1,23 @@
 .header{
-	background-image: linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../img/hero.jpg);
+	background-image: linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../img/small/hero-sm.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 100vh;
 	padding: 0 2rem;
 	position: relative;
+
+	@mixin resp-css-medium{
+		background-image: linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../img/medium/hero-md.jpg);
+	}
+
+	@mixin resp-css-high{
+		background-image: linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../img/high/hero-hi.jpg);
+	}
+
+	@mixin resp-css-hd{
+		background-image: linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../img/hd/hero.jpg);
+	}
 
 	&__text-box{
 		position: absolute;
