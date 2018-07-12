@@ -11,48 +11,52 @@
 </head>
 <body>
 	<header class="header clearfix">
-		<!--Navigation-bar Section Starts here -->
-			<div class="grid">
-				<div class="row">
-					<div class="col-12">
-						<div class="nav-bar">
-							<div class="col-4">
-								<img src="img/hd/logo-white.png" alt="" class="nav-bar__logo-white">
-							</div>
-							<div class="col-8">
-								<nav class="nav-bar__nav">
-									<ul>
-										<li><a href="">FOOD DELIVERY</a></li>
-										<li><a href="">HOW IT WORKS</a></li>
-										<li><a href="">OUR CITIES</a></li>
-										<li><a href="">SIGN UP</a></li>
-									</ul>
-								</nav>
-							</div>
+	<!--Navigation-bar Section Starts here -->
+		<div class="grid">
+			<div class="row">
+				<div class="col-12">
+					<div class="nav-bar">
+						<div class="col-4">
+							<img src="img/hd/logo-white.png" alt="Logo of Omnifood" class="nav-bar__logo-white">
 						</div>
+						<!-- <div class="col-8"> -->
+							<input type="checkbox" class="nav-bar__checkbox" id="navi-toggle">
+							<label for="navi-toggle" class="nav-bar__toggle">
+								<span class="nav-bar__menu-icon"></span>
+							</label>
+							<nav class="nav-bar__nav">
+								<ul>
+									<li><a href="#delivery">FOOD DELIVERY</a></li>
+									<li><a href="#steps">HOW IT WORKS</a></li>
+									<li><a href="#cities">OUR CITIES</a></li>
+									<li><a href="#plans">SIGN UP</a></li>
+								</ul>
+							</nav>
+						<!-- </div> -->
 					</div>
 				</div>
 			</div>
-		<!--Navigation-bar Section Ends here -->
+		</div>
+	<!--Navigation-bar Section Ends here -->
 
-		<!--Header-text Section Starts here -->
-			<div class="grid">
-				<div class="row">
-					<div class="col-12">
-						<div class="header__text-box">
-							<h1 class="header__heading mg-bt-sm">Goodbye junk food.<br>Hello super healthy meals.</h1>
-							<a href="#" class="btn btn--header-orange">I'm hungry</a>
-							<a href="#" class="btn btn--header-transparent">Show me more</a>
-						</div>
+	<!--Header-text Section Starts here -->
+		<div class="grid">
+			<div class="row">
+				<div class="col-12">
+					<div class="header__text-box">
+						<h1 class="header__heading mg-bt-sm">Goodbye junk food.<br>Hello super healthy meals.</h1>
+						<a href="#plans" class="btn btn--header-orange">I'm hungry</a>
+						<a href="#delivery" class="btn btn--header-transparent">Show me more</a>
 					</div>
 				</div>
 			</div>
-		<!--Header-text Section Ends here -->
+		</div>
+	<!--Header-text Section Ends here -->
 	</header>
 
 	<main>
 	<!--features Section Starts here -->
-		<div class="features clearfix">
+		<div class="features clearfix" id="delivery">
 			<div class="grid">
 				<div class="row">
 					<div class="colo-12">
@@ -206,9 +210,8 @@
 		</div>
 	<!--gallery Section Ends here -->
 
-
 	<!--steps Section Starts here -->
-		<div class="steps clearfix">
+		<div class="steps clearfix" id="steps">
 			<div class="col-12">
 				<h1 class="heading-1 mg-bt-lg">
 					HOW IT WORKS — SIMPLE AS 1, 2, 3
@@ -255,9 +258,8 @@
 		</div>
 	<!--steps Section Ends here -->
 	
-
-	<!--cities clearfix Section Starts here -->
-		<div class="cities clearfix">
+	<!--cities Section Starts here -->
+		<div class="cities clearfix" id="cities">
 			<div class="grid">
 				<div class="row">
 					<div class="col-12">
@@ -354,7 +356,7 @@
 										<source srcset="img/high/london-hi.jpg" media="(min-width: 1200px)">
 										<source srcset="img/medium/london-md.jpg" media="(min-width: 900px)">
 										<source srcset="img/small/london-sm.jpg" media="(min-width: 600px)">
-										<img src="img/small/londo-sm.jpg" alt="Image of london city" class="cities__box-img">
+										<img src="img/small/london-sm.jpg" alt="Image of london city" class="cities__box-img">
 									</picture>
 									<h3 class="cities__box-heading">london</h3>
 									<div class="cities__info">
@@ -380,7 +382,7 @@
 				</div>
 			</div>
 		</div>
-	<!--cities clearfix Section Ends here -->
+	<!--cities Section Ends here -->
 
 	<!--testimonials Section Starts here -->
 		<div class="testimonials clearfix">
@@ -435,201 +437,199 @@
 		</div>
 	<!--testimonials Section Ends here -->
 
-
-		<!--plans Section Starts here -->
-			<div class="plans clearfix">
-				<div class="grid">
-					<div class="row">
-						<div class="col-12">
-							<h1 class="heading-1 mg-bt-50">
-								Start eating healthy today
-							</h1>
-						</div>
-					</div>
-				</div>
-				<div class="grid">
-					<div class="row">
-						<div class="col-12">
-								<div class="col-12 col-md-4">
-									<div class="plans__plan-card">
-										<div class="plans__plan-card-price">
-											<p class="plans__plan-card-price-type">premium</p>
-											<p class="plans__plan-card-price-plan">
-												<span>$399</span>/ month
-											</p>
-											<p class="plans__plan-card-price-info">
-												That's only 13.30$ per meal
-											</p>
-										</div>
-										<div class="plans__plan-card-features">
-											<ul>
-												<li>1 meal every day</li>
-												<li>Order 24/7</li>
-												<li>Access to newest creations</li>
-												<li>Free delivery</li>
-											</ul>
-										</div>
-										<div class="plans__plan-card-btn">
-											<a href="#" class="plans__plan-card-btn-link plans__plan-card-btn-link--orange">Sign up now</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-4">
-									<div class="plans__plan-card">
-										<div class="plans__plan-card-price">
-											<p class="plans__plan-card-price-type">pro</p>
-											<p class="plans__plan-card-price-plan">
-												<span>$149</span>/ month
-											</p>
-											<p class="plans__plan-card-price-info">
-												That's only 14.90$ per meal
-											</p>
-										</div>
-										<div class="plans__plan-card-features">
-											<ul>
-												<li>1 meal 	10days/ month</li>
-												<li>Order 24/7</li>
-												<li>Access to newest creations</li>
-												<li>Free delivery</li>
-											</ul>
-										</div>
-										<div class="plans__plan-card-btn">
-											<a href="#" class="plans__plan-card-btn-link">Sign up now</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-4">
-									<div class="plans__plan-card">
-										<div class="plans__plan-card-price">
-											<p class="plans__plan-card-price-type">Starter</p>
-											<p class="plans__plan-card-price-plan">
-												<span>19$</span>/meal
-											</p>
-											<p class="plans__plan-card-price-info">
-												Regular price
-											</p>
-										</div>
-										<div class="plans__plan-card-features plans__plan-card-features-normal">
-											<ul>
-												<li>1 meal</li>
-												<li>Order from 8 am to 12 pm</li>
-												<li></li>
-												<li>Free delivery</li>
-											</ul>
-										</div>
-										<div class="plans__plan-card-btn">
-											<a href="#" class="plans__plan-card-btn-link">Sign up now</a>
-										</div>
-									</div>
-								</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		<!--plans Section Ends here -->
-
-
-		<!--form clearfix Section Starts here -->
-			<div class="form clearfix">
-				<div class="grid">
-					<div class="row">
-						<div class="col-12">
-							<h1 class="heading-1">
-								We're happy to hear from you
-							</h1>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12">
-							<div class="form__contact">
-								<form action="#">
-									<div class="col-12">
-										<div class="form__contact-line">
-											<div class="col-12 col-sm-4"><label for="name">Name</label></div>
-											<div class="col-12 col-sm-8">
-												<input type="text" id="name" placeholder="Your name" required="required">
-											</div>
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="form__contact-line">
-											<div class="col-12 col-sm-4"><label for="email">Email</label></div>
-											<div class="col-12 col-sm-8">
-												<input type="email" id="email" placeholder="Your email" required="required">
-											</div>
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="form__contact-line">
-											<div class="col-12 col-sm-4"><span>how did you find us?</span></div>
-											<div class="col-12 col-sm-8">
-												<select name="find us" id="list">
-													<option value="Friend">Friends</option>
-													<option value="Search">Search engine</option>
-													<option value="Ads">Advertisement</option>
-													<option value="Other">Other</option>
-												</select>
-											</div>
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="form__contact-line">
-											<div class="col-12 col-sm-4"><span>Newsletter?</span></div>
-											<div class="col-12 col-sm-8">
-												<input type="checkbox" id="Newsletter" checked="checked">
-												<label for="Newsletter">Yes, please</label>
-											</div>
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="form__contact-line">
-											<div class="col-12 col-sm-4">
-												<span>Drop us a line</span>
-											</div>
-											<div class="col-12 col-sm-8">
-												<textarea name="message" id="" cols="30" rows="5" placeholder="Your message"></textarea>
-												<input type="submit" value="Send it!">
-											</div>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		<!--form clearfix Section Ends here -->
-		
-		<footer class="footer clearfix">
+	<!--plans Section Starts here -->
+		<div class="plans clearfix" id="plans">
 			<div class="grid">
 				<div class="row">
-					<div class="col-12 clearfix">
-						<div class="col-12 col-sm-6">
-							<div class="footer__links mg-bt-md">
-								<ul>
-									<li><a href="#">About us</a></li>
-									<li><a href="#">Blog</a></li>
-									<li><a href="#">Press</a></li>
-									<li><a href="#">IOS App</a></li>
-									<li><a href="#">Android App</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6">
-							<div class="footer__social-media">
-								<svg class="footer__social-media-icon icon-facebook"><use xlink:href="img/social.svg#icon-facebook"></use></svg>
-								<svg class="footer__social-media-icon icon-twitter"><use xlink:href="img/social.svg#icon-twitter"></use></svg>
-								<svg class="footer__social-media-icon icon-google-plus"><use xlink:href="img/social.svg#icon-google-plus"></use></svg>
-								<svg class="footer__social-media-icon icon-instagram"><use xlink:href="img/social.svg#icon-instagram"></use></svg>
-							</div>
-						</div>
+					<div class="col-12">
+						<h1 class="heading-1 mg-bt-50">
+							Start eating healthy today
+						</h1>
 					</div>
-					<p class="footer__legal-text">
-						Copyright © 2015 by Omnifood. All rights reserved.
-					</p>
 				</div>
 			</div>
-		</footer>
+			<div class="grid">
+				<div class="row">
+					<div class="col-12">
+							<div class="col-12 col-md-4">
+								<div class="plans__plan-card">
+									<div class="plans__plan-card-price">
+										<p class="plans__plan-card-price-type">premium</p>
+										<p class="plans__plan-card-price-plan">
+											<span>$399</span>/ month
+										</p>
+										<p class="plans__plan-card-price-info">
+											That's only 13.30$ per meal
+										</p>
+									</div>
+									<div class="plans__plan-card-features">
+										<ul>
+											<li>1 meal every day</li>
+											<li>Order 24/7</li>
+											<li>Access to newest creations</li>
+											<li>Free delivery</li>
+										</ul>
+									</div>
+									<div class="plans__plan-card-btn">
+										<a href="#" class="plans__plan-card-btn-link plans__plan-card-btn-link--orange">Sign up now</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-4">
+								<div class="plans__plan-card">
+									<div class="plans__plan-card-price">
+										<p class="plans__plan-card-price-type">pro</p>
+										<p class="plans__plan-card-price-plan">
+											<span>$149</span>/ month
+										</p>
+										<p class="plans__plan-card-price-info">
+											That's only 14.90$ per meal
+										</p>
+									</div>
+									<div class="plans__plan-card-features">
+										<ul>
+											<li>1 meal 	10days/ month</li>
+											<li>Order 24/7</li>
+											<li>Access to newest creations</li>
+											<li>Free delivery</li>
+										</ul>
+									</div>
+									<div class="plans__plan-card-btn">
+										<a href="#" class="plans__plan-card-btn-link">Sign up now</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-4">
+								<div class="plans__plan-card">
+									<div class="plans__plan-card-price">
+										<p class="plans__plan-card-price-type">Starter</p>
+										<p class="plans__plan-card-price-plan">
+											<span>19$</span>/meal
+										</p>
+										<p class="plans__plan-card-price-info">
+											Regular price
+										</p>
+									</div>
+									<div class="plans__plan-card-features plans__plan-card-features-normal">
+										<ul>
+											<li>1 meal</li>
+											<li>Order from 8 am to 12 pm</li>
+											<li></li>
+											<li>Free delivery</li>
+										</ul>
+									</div>
+									<div class="plans__plan-card-btn">
+										<a href="#" class="plans__plan-card-btn-link">Sign up now</a>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--plans Section Ends here -->
+
+	<!--form Section Starts here -->
+		<div class="form clearfix">
+			<div class="grid">
+				<div class="row">
+					<div class="col-12">
+						<h1 class="heading-1">
+							We're happy to hear from you
+						</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="form__contact">
+							<form action="#">
+								<div class="col-12">
+									<div class="form__contact-line">
+										<div class="col-12 col-sm-4"><label for="name">Name</label></div>
+										<div class="col-12 col-sm-8">
+											<input type="text" id="name" placeholder="Your name" required="required">
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form__contact-line">
+										<div class="col-12 col-sm-4"><label for="email">Email</label></div>
+										<div class="col-12 col-sm-8">
+											<input type="email" id="email" placeholder="Your email" required="required">
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form__contact-line">
+										<div class="col-12 col-sm-4"><span>how did you find us?</span></div>
+										<div class="col-12 col-sm-8">
+											<select name="find us" id="list">
+												<option value="Friend">Friends</option>
+												<option value="Search">Search engine</option>
+												<option value="Ads">Advertisement</option>
+												<option value="Other">Other</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form__contact-line">
+										<div class="col-12 col-sm-4"><span>Newsletter?</span></div>
+										<div class="col-12 col-sm-8">
+											<input type="checkbox" id="Newsletter" checked="checked">
+											<label for="Newsletter">Yes, please</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form__contact-line">
+										<div class="col-12 col-sm-4">
+											<span>Drop us a line</span>
+										</div>
+										<div class="col-12 col-sm-8">
+											<textarea name="message" cols="30" rows="5" placeholder="Your message"></textarea>
+											<input type="submit" value="Send it!">
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--form Section Ends here -->
+		
+	<footer class="footer clearfix">
+		<div class="grid">
+			<div class="row">
+				<div class="col-12 clearfix">
+					<div class="col-12 col-sm-6">
+						<div class="footer__links mg-bt-md">
+							<ul>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Press</a></li>
+								<li><a href="#">IOS App</a></li>
+								<li><a href="#">Android App</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6">
+						<div class="footer__social-media">
+							<svg class="footer__social-media-icon icon-facebook"><use xlink:href="img/social.svg#icon-facebook"></use></svg>
+							<svg class="footer__social-media-icon icon-twitter"><use xlink:href="img/social.svg#icon-twitter"></use></svg>
+							<svg class="footer__social-media-icon icon-google-plus"><use xlink:href="img/social.svg#icon-google-plus"></use></svg>
+							<svg class="footer__social-media-icon icon-instagram"><use xlink:href="img/social.svg#icon-instagram"></use></svg>
+						</div>
+					</div>
+				</div>
+				<p class="footer__legal-text">
+					Copyright © 2015 by Omnifood. All rights reserved.
+				</p>
+			</div>
+		</div>
+	</footer>
 			
 	</main>
 </body>

@@ -936,6 +936,7 @@ Grid Layout 12Col Starts!!!
 	margin-top: 2rem;
 	display: flex;
 	align-items: center;
+	position: relative;
 
 }
 
@@ -944,38 +945,192 @@ Grid Layout 12Col Starts!!!
 		height: 10rem;
 	}
 
+.nav-bar__checkbox{
+		display: none;
+		visibility: hidden;
+	}
+
+.nav-bar__toggle{
+		width: 5rem;
+		height: 5rem;
+		background-color: #ecf0f1;
+		border-radius: 50%;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+		z-index: 30;
+		position: fixed;
+		top: 4rem;
+		right: 4rem;
+		cursor: pointer;
+	}
+
+.nav-bar__toggle:hover > .nav-bar__menu-icon::before{ top: -.9rem; }
+
+.nav-bar__toggle:hover > .nav-bar__menu-icon::after{ top: .9rem; }
+
+@media (min-width: 900px){
+
+.nav-bar__toggle{
+			display: none;
+			visibility: hidden
+	}
+	}
+
+.nav-bar__menu-icon{
+		position: relative;
+	}
+
+.nav-bar__menu-icon,
+		.nav-bar__menu-icon::before,
+		.nav-bar__menu-icon::after{
+			width:2rem;
+			height: 2px;
+			background-color: #333;
+			display: inline-block;
+		}
+
+.nav-bar__menu-icon{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%,-50%);
+			        transform: translate(-50%,-50%);
+		}
+
+.nav-bar__menu-icon::before,
+		.nav-bar__menu-icon::after{
+			content: '';
+			position: absolute;
+			left: 0;
+			transition: all .2s;
+		}
+
+.nav-bar__menu-icon::before{ top: -.8rem; }
+
+.nav-bar__menu-icon::after{ top: .8rem; }
+
+@media (min-width: 900px){
+
+.nav-bar__menu-icon{
+			display: none;
+			visibility: hidden
+	}
+	}
+
+.nav-bar__checkbox:checked ~ .nav-bar__nav{
+		opacity: 1;
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+		visibility: visible;
+	}
+
+.nav-bar__checkbox:checked ~ .nav-bar__toggle .nav-bar__menu-icon{
+		background-color: transparent;
+	}
+
+.nav-bar__checkbox:checked ~ .nav-bar__toggle .nav-bar__menu-icon:before{
+		top: 0;
+		-webkit-transform: rotate(135deg);
+		        transform: rotate(135deg);
+	}
+
+.nav-bar__checkbox:checked ~ .nav-bar__toggle .nav-bar__menu-icon:after{
+		top: 0;
+		-webkit-transform: rotate(-135deg);
+		        transform: rotate(-135deg);
+	}
+
 .nav-bar__nav{
-		float: right;
+		height: auto;
+		width: 100vw;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 20;
+		background-color: rgba(243,156,18, .99);
+
+		opacity: 0;
+		visibility: hidden;
+		transition: all .4s;
+
+		-webkit-transform: scale(1.5);
+
+		        transform: scale(1.5);
 	}
 
 .nav-bar__nav ul{
 			list-style-type: none;
+			text-align: center;
 		}
 
-.nav-bar__nav ul li{
+.nav-bar__nav ul a{
 				display: inline-block;
+				width: 100%;
+				text-decoration: none;
+				color: #eee;
+				font-size: 2.4rem;
+				padding: 2.2rem 2rem;
+				transition: all .2;
+				border-bottom: 1px solid #f/*f*/f;
+				border-radius: 1rem;
 			}
 
-.nav-bar__nav ul li:not(:last-child){
-					margin-right: 4rem;
+.nav-bar__nav ul a:hover{
+					background-color: #efefef;
+					color: #111;
 				}
 
-.nav-bar__nav ul li a:link,
-				.nav-bar__nav ul li a:visited{
+@media (min-width: 900px){
+
+.nav-bar__nav{
+			height: auto;
+			width: auto;
+			position: absolute;
+			top: 30%;
+			right: 0;
+			background-color: transparent;
+
+			opacity: 1;
+			visibility: visible;
+			transition: all 0s ease;
+
+			-webkit-transform: scale(1);
+
+			        transform: scale(1)
+	}
+
+			.nav-bar__nav ul{
+				list-style-type: none;
+				text-align: left;
+			}
+
+				.nav-bar__nav ul li{
 					display: inline-block;
-					text-decoration: none;
-					font-size: 1.8rem;
-					font-weight: 300;
-					color: #FFF;
-					padding: .8rem 0;
-					border-bottom: 2px solid transparent;
-					transition: all .2s;
 				}
+					.nav-bar__nav ul li:not(:last-child){
+						margin-right: 4rem;
+					}
 
-.nav-bar__nav ul li a:hover,
-				.nav-bar__nav ul li a:visited{
-					border-bottom: 2px solid #e67e22;
-				}
+					.nav-bar__nav ul li a:link,
+					.nav-bar__nav ul li a:visited{
+						width: auto;
+						display: inline-block;
+						text-decoration: none;
+						font-size: 1.8rem;
+						font-weight: 300;
+						color: #FFF;
+						padding: .8rem 0;
+						border-bottom: 2px solid transparent;
+						border-radius: 0;
+						transition: all .2s;
+					}
+
+					.nav-bar__nav ul li a:hover,
+					.nav-bar__nav ul li a:visited{
+						border-bottom: 2px solid #e67e22;
+						background-color: transparent;
+						color: #fff;
+					}
+	}
 
 .plans{
 	padding: 8rem 0;
