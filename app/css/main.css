@@ -637,6 +637,7 @@ html{
 		margin: 0 auto;
 		padding: 1rem;
 		width: 60%;
+		line-height: 1.6;
 	}
 
 .footer__copyright a{
