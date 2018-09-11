@@ -66,4 +66,21 @@
 	&__legal-text{
 		text-align: center;
 	}
+
+	&__copyright{
+		margin: 0 auto;
+		padding: 1rem;
+		width: 60%;
+
+		a{
+			text-decoration: none;
+			color: #e0e0e0;
+			transition: box-shadow .2s;
+
+			&:hover,
+			&:active{
+				box-shadow: 0 1rem 2rem rgba(0,0,0,.8);
+			}
+		}
+	}
 }

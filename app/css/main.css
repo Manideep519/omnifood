@@ -633,6 +633,23 @@ html{
 		text-align: center;
 	}
 
+.footer__copyright{
+		margin: 0 auto;
+		padding: 1rem;
+		width: 60%;
+	}
+
+.footer__copyright a{
+			text-decoration: none;
+			color: #e0e0e0;
+			transition: box-shadow .2s;
+		}
+
+.footer__copyright a:hover,
+			.footer__copyright a:active{
+				box-shadow: 0 1rem 2rem rgba(0,0,0,.8);
+			}
+
 .form{
 	padding: 8rem 2rem;
 }
